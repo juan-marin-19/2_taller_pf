@@ -18,5 +18,13 @@ package object FuncionesRecursivas {
     aux(l.head, l.tail)
   }
 
+  def movsTorresHanoi(n: Int): BigInt = {
+    if (n == 1) 1
+    else 2 * movsTorresHanoi(n - 1) + 1
+  }
+
+
+
+
 
 }
